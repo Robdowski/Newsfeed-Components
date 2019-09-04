@@ -167,4 +167,19 @@ articles = document.querySelector(".articles")
 data.map(e => articles.appendChild(createNews(e)))
 
 
+const artdiv = document.querySelectorAll(".article")
+artdiv.forEach(item => item.addEventListener("mouseover", e=> {
+  item.style.transition = "all 0.2s";
+  item.style.transform = "scale(1.2)"
+}))
+
+artdiv.forEach(item => item.addEventListener("mouseleave", e=> {
+  item.style.transition = "all 0.2s";
+  item.style.transform = "scale(1.0)"
+}))
+
+
+
+
+
 
